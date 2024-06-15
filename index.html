@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Georgia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="index-page">
+    <header>
+        <h1>Welcome to Georgia</h1>
+        <h2>An Introduction to the Peach State</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="atlanta.html">Atlanta</a></li>
+                <li><a href="braselton.html">Braselton</a></li>
+                <li><a href="flowery_branch.html">Flowery Branch</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="main-content">
+            <h3>About Georgia</h3>
+            <img src="flag.png" alt="Flag of Georgia">
+            <p class="image-citation">Source: <a href="https://commons.wikimedia.org/wiki/File:Flag_of_the_State_of_Georgia.svg">Flag of Georgia</a></p>
+            <p>Georgia, located in the southeastern United States, boasts a rich blend of cultural, historical, and economic diversity. Known as the Peach State, Georgia is home to bustling urban centers like Atlanta, which is a major hub for business and transportation, and charming small towns with deep historical roots, like Braselton and Flowery Branch. The state’s economy thrives on a mix of agriculture, manufacturing, and a burgeoning film industry. Its diverse landscapes range from coastal beaches and wetlands to lush forests and the Blue Ridge Mountains, offering a variety of outdoor activities and scenic beauty.<sup>3</sup></p>
+            <h3>External Resources</h3>
+            <p>Learn more about Georgia on the <a href="https://www.georgia.gov">official state website</a>.</p>
+
+            <h3>Contact Us</h3>
+            <form id="contact-form">
+                <input type="text" id="first-name" placeholder="First Name" required>
+                <input type="text" id="last-name" placeholder="Last Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <input type="email" id="confirm-email" placeholder="Confirm Email Address" required>
+                <textarea id="question" placeholder="Your Question" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="right-content">
+            <aside class="stats-content" id="georgia-stats">
+                <h3>Georgia, GA</h3>
+                <ol>
+                    <li>Population: 10,711,908<sup>1</sup></li>
+                    <li>Region: Southeastern United States<sup>4</sup></li>
+                    <li>Established: 1732<sup>3</sup></li>
+                </ol>
+            </aside>
+            <aside class="facts-content" id="georgia-facts">
+                <h3>Interesting Facts</h3>
+                <ul>
+                    <li>Georgia is known as the Peach State<sup>2</sup>.</li>
+                    <li>It is the fourth largest state east of the Mississippi River.<sup>2</sup></li>
+                    <li>The state is a major producer of pecans and peanuts.<sup>3</sup></li>
+                    <li>Georgia is known for its rich history and cultural heritage, including being the birthplace of Martin Luther King Jr.<sup>2</sup></li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+    <footer>
+        <p class="citations"><sup>1</sup>Source: <a href="https://data.census.gov/profile/Georgia?g=040XX00US13">Census Data for Georgia</a></p>
+        <p class="citations"><sup>2</sup>Source: <a href="https://www.britannica.com/place/Georgia-state">Brittanica: Georgia</a></p>
+        <p class="citations"><sup>3</sup>Source: <a href="https://www.georgiaencyclopedia.org/articles/history-archaeology/georgia-history-overview/">New Georgia Encyclopedia</a></p>
+        <p class="citations"><sup>4</sup>Source: <a href="https://education.nationalgeographic.org/resource/united-states-regions/">United States Regions</a></p>
+    </footer>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            var email = document.getElementById('email').value;
+            var confirmEmail = document.getElementById('confirm-email').value;
+            if (email !== confirmEmail) {
+                alert('Email addresses do not match.');
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1rem;
+    color: #ddd;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.main-content {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.right-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stats-content,
+.facts-content {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    max-width: 300px;
+}
+
+.stats-content h3,
+.facts-content h3 {
+    text-align: center;
+}
+
+#georgia-stats {
+    float: left;
+}
+
+#georgia-facts {
+    float: right;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.info {
+    margin-top: 20px;
+}
+
+.info-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.info-label {
+    font-weight: bold;
+    color: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+ul, ol {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #575757;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-content {
+        margin-right: 0;
+    }
+
+    .right-content {
+        margin-top: 20px;
+        align-self: flex-start;
+        width: 100%;
+    }
+
+    .stats-content,
+    .facts-content {
+        width: 100%;
+    }
+}
+
+sup {
+    font-size: 0.6em;
+}
+
+
+.citations {
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: left;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
+    font-size: 0.75em;
+    color: #666;
+}
+
+
+.image-citation {
+    font-size: 0.75em;
+    color: #666;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.image-citation a {
+    color: #666; 
+    text-decoration: none; 
+}
+
+.image-citation a:hover {
+    text-decoration: underline;
+}
+
