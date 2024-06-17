@@ -148,12 +148,12 @@ ol {
 
 .external-resources {
     float: left;
-    width: 60%;
+     
 }
 
 .contact-container {
     float: right;
-    width: 300px;
+    width: 325px;
 }
 
 form {
@@ -255,4 +255,22 @@ footer {
 
 .image-citation a:hover {
     text-decoration: underline;
+}
+
+#contact-form {
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.relative-positioned {
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.absolute-positioned {
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
